@@ -1,0 +1,303 @@
+/* ########## CSS STYLE FOR INDEX.HTML ##########*/
+
+body.mainbackground {
+    background-image: url("../media/mainpic.png");
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#maintext {
+    margin: 40px 80px; /* top botton: 40px, left right: 80px*/
+}
+
+.indexcontainer {
+    width: 100%;
+}
+
+.row1 {
+
+    margin: 20px 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    gap: 20px;
+}
+
+.column1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 500px;
+    padding: 0 20px;
+
+    background-color: rgba(23, 43, 56, 0.75);
+    border-radius: 10px;
+}
+
+.column1:hover, .column2:hover {
+    background-color: rgba(23, 43, 100, 0.75);
+}
+
+.row2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 60px;
+    margin: 60px 40px;
+}
+
+.column2 {
+    flex-direction: column;
+    height: 120px;
+    background-color: rgba(23, 43, 56, 0.75);
+    border-radius: 10px;
+    padding: 5px 25px;
+    margin: 20px 20px;
+
+}
+
+
+/* list elements but only in main part*/
+
+.indexmain li {
+
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* ########## CSS STYLE FOR basics.html, openings.htl and tactics.html */
+
+/* ### FOR OPENINGS AND TACTICS ONLY ### */
+
+#openingintro {
+    margin: 40px 80px;
+}
+
+/*container contains all paragraphs*/
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+}
+
+/*paragraph contains text + imagediv*/
+.paragraph {
+
+    margin-bottom: 40px;
+    width: 80%;
+    background-color: antiquewhite;
+    border-radius: 10px;
+
+
+}
+
+.text {
+    display: inline-block;
+    float: left;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-bottom: 15px;
+    max-width: 70%;
+}
+
+.imagediv {
+    display: inline-block;
+    float: right;
+    margin-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    max-width: 200px;
+}
+
+.basicsmain img, .openingsmain img, .tacticsmain img {
+    max-width: 200px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+}
+
+/* ########## CSS SHEET FOR puzzles.html ########## */
+
+.puzzlecontainer {
+    margin-left: 40px;
+    width: 90%;
+}
+
+.puzzlerow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    margin-bottom: 20px;
+}
+
+.puzzlecolumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.puzzlesmain img {
+    max-width: 60%;
+    max-height: 60%;
+    height: auto;
+    width: auto;
+}
+
+
+.puzzlecaption {
+    display: block;
+    font-size: 30px;
+    text-align: center;
+}
+
+.puzzletext {
+    margin: 40px 80px;
+}
+
+#solutions {
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    text-align: left;
+}
+
+/* ########## CSS STYLE FOR sources.html ########## */
+
+
+.sourcebox {
+    margin: 20px;
+    width: 80%;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.sourcesfooter {
+    background: #181407;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+}
+
+/* ########## FOLLOWING CSS CODE IS THE SAME IN ALL SCRIPTS ########## */
+
+/* ##### BASIC SETTINGS ##### */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+h1 {
+
+    text-align: left;
+    padding: 20px;
+    color: #FBFBEF;
+    font-size: 30px;
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 30px;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Verdana, sans-serif;
+}
+
+body {
+    background-color: #FBFBEF;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+}
+
+a {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+/* ##### NAVBAR STYLE *****/
+nav {
+    display: flex;
+    flex-flow: row wrap; /*wraps as row when window small, logo not showing without*/
+    flex-direction: column;
+    justify-content: flex-end; /* next elemt is right next to other ones*/
+    background: #181407;
+    height: 80px;
+    width: 100%;
+}
+
+nav ul {
+    text-align: right;
+    margin-right: 40px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 70px;
+    margin: 0 10px;
+}
+
+nav ul li a {
+
+    color: white;
+    font-size: 17px;
+    border-radius: 3px;
+    margin: 0 17px;
+    padding: 3px;
+}
+
+nav ul li a:hover {
+    background-color: brown;
+}
+
+
+/* ########## FOOTER STYLE ########## */
+
+footer {
+    background: #181407;
+    height: 50px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+footer a {
+    border-radius: 3px;
+}
+
+
+#footText {
+    display: inline-block;
+    float: right;
+    margin-right: 40px;
+    margin-top: 10px;
+    padding: 3px; /*Padding for larger hover effect*/
+}
+
+#footText:hover {
+    background-color: brown;
+    border-radius: 3px;
+}
